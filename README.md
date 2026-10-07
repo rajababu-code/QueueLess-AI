@@ -21,24 +21,50 @@ On the included **synthetic** test dataset:
 
 These are prototype metrics only, not real-world accuracy.
 
-### Run
+## How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/rajababu-code/QueueLess-AI.git
+cd QueueLess-AI
+
+### 2. Install dependencies
+
 ```bash
 pip install -r requirements.txt
+```
+
+### 3. Run the application
+
+```bash
 streamlit run app.py
 ```
 
-### Retrain
+The application will open in your browser.
+
+### 4. Retrain the Random Forest model (optional)
+
 ```bash
 python train_model.py
 ```
 
-### Structure
-- `app.py` — interactive Streamlit demo
-- `predictor.py` — prediction function
-- `train_model.py` — model training
-- `data/queue_data.csv` — synthetic dataset
-- `models/queue_wait_model.joblib` — trained model
-- `docs/` — report, architecture, demo script, checklist
+### Project Structure
+
+QueueLess-AI/
+│
+├── app.py
+├── predictor.py
+├── train_model.py
+├── queue_data.csv
+├── queue_wait_model.joblib
+├── requirements.txt
+├── README.md
+├── architecture.md
+├── demo_script.md
+├── project_report.md
+├── SUBMISSION_CHECKLIST.md
+└── QueueLess_AI_Project_Report.pdf
 
 ### Future scope
 Real queue data, QR check-ins, sensors, live updates, mobile app, admin dashboard and continuous retraining.
